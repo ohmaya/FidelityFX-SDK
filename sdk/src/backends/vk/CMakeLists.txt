@@ -218,8 +218,8 @@ function (CheckVulkanSDKVersion)
 
 endfunction()
 
-find_package(Vulkan REQUIRED)
-CheckVulkanSDKVersion()
+# find_package(Vulkan REQUIRED) # OPVS_FFR3
+# CheckVulkanSDKVersion() # OPVS_FFR3
 
 file(GLOB PUBLIC_SHADERS
 	FFX_PUBLIC_SHADER_SOURCES
@@ -371,7 +371,7 @@ else()
 endif()
 
 # link in vk
-target_link_libraries(ffx_backend_vk_${FFX_PLATFORM_NAME} "Vulkan::Vulkan")
+# target_link_libraries(ffx_backend_vk_${FFX_PLATFORM_NAME} "Vulkan::Vulkan") # OPVS_FFR3
 
 # vk backend source
 source_group("private_source"  FILES ${PRIVATE_SOURCE})
