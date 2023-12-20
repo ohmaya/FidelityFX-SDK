@@ -165,23 +165,24 @@ add_subdirectory(${FFX_COMPONENTS_PATH}/fsr3upscaler)
 add_subdirectory(${FFX_COMPONENTS_PATH}/fsr2)
 add_subdirectory(${FFX_COMPONENTS_PATH}/fsr1)
 add_subdirectory(${FFX_COMPONENTS_PATH}/spd)
-add_subdirectory(${FFX_COMPONENTS_PATH}/cacao)
-add_subdirectory(${FFX_COMPONENTS_PATH}/lpm)
-add_subdirectory(${FFX_COMPONENTS_PATH}/blur)
-add_subdirectory(${FFX_COMPONENTS_PATH}/vrs)
-add_subdirectory(${FFX_COMPONENTS_PATH}/cas)
-add_subdirectory(${FFX_COMPONENTS_PATH}/dof)
-add_subdirectory(${FFX_COMPONENTS_PATH}/lens)
-add_subdirectory(${FFX_COMPONENTS_PATH}/parallelsort)
-add_subdirectory(${FFX_COMPONENTS_PATH}/denoiser)
-add_subdirectory(${FFX_COMPONENTS_PATH}/sssr)
-add_subdirectory(${FFX_COMPONENTS_PATH}/classifier)
+# add_subdirectory(${FFX_COMPONENTS_PATH}/cacao)        # OPVS_FFR3
+# add_subdirectory(${FFX_COMPONENTS_PATH}/lpm)          # OPVS_FFR3
+# add_subdirectory(${FFX_COMPONENTS_PATH}/blur)         # OPVS_FFR3
+# add_subdirectory(${FFX_COMPONENTS_PATH}/vrs)          # OPVS_FFR3
+# add_subdirectory(${FFX_COMPONENTS_PATH}/cas)          # OPVS_FFR3
+# add_subdirectory(${FFX_COMPONENTS_PATH}/dof)          # OPVS_FFR3
+# add_subdirectory(${FFX_COMPONENTS_PATH}/lens)         # OPVS_FFR3
+# add_subdirectory(${FFX_COMPONENTS_PATH}/parallelsort) # OPVS_FFR3
+# add_subdirectory(${FFX_COMPONENTS_PATH}/denoiser)     # OPVS_FFR3
+# add_subdirectory(${FFX_COMPONENTS_PATH}/sssr)         # OPVS_FFR3
+# add_subdirectory(${FFX_COMPONENTS_PATH}/classifier)   # OPVS_FFR3
 
 # Add appropriate graphics backend if requested
 if(FFX_API_DX12)
     add_subdirectory(${FFX_SRC_BACKENDS_PATH}/dx12)
 endif()
 
-if(FFX_API_VK)
-    add_subdirectory(${FFX_SRC_BACKENDS_PATH}/vk)
-endif()
+# OPVS_FFR3
+# if(FFX_API_VK)
+    # add_subdirectory(${FFX_SRC_BACKENDS_PATH}/vk)
+# endif()
